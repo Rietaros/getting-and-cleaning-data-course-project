@@ -100,8 +100,7 @@ humanActCols <- gsub("Mag", "Magnitude", humanActCols)
 humanActCols <- gsub("Freq", "Frequency", humanActCols)
 humanActCols <- gsub("^f", "frequencyDomain", humanActCols)
 humanActCols <- gsub("^t", "timeDomain", humanActCols)
-# correct typo
-humanActCols <- gsub("BodyBody", "Body", humanActCols)
+
 # use new labels as column names
 colnames(humanAct) <- humanActCols
 
