@@ -108,7 +108,7 @@ humanActCols <- gsub("BodyBody", "Body", humanActCols)
 colnames(humanAct) <- humanActCols
 
 #----------------------------------------------------------------------------#
-# Step 5 - Create a  tidy set with the average of each variable for each 
+# Step 5.1 - Create a  tidy set with the average of each variable for each 
 #          activity and each subject
 #----------------------------------------------------------------------------#
 
