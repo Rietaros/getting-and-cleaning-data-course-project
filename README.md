@@ -1,5 +1,5 @@
 # Getting and Cleaning Data - Course Project
-.Aries Fitriawan.
+.Aries Fitriawan.<br>
 Final Project for Coursera Getting and Cleaning Data by Johns Hopkins University
 
 In this project, data collected from <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">Human Activity Recognition Using Smartphones</a>, 
