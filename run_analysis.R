@@ -94,24 +94,22 @@ humanActCols <- colnames(humanAct)
 humanActCols <- gsub("[\\(\\)-]", "", humanActCols)
 
 # clean up names
-humanActCols <- gsub("^f", "frequencyDomain", humanActCols)
-humanActCols <- gsub("^t", "timeDomain", humanActCols)
+humanActCols <- gsub("mean", "Mean", humanActCols)
+humanActCols <- gsub("std", "StandardDeviation", humanActCols)
 humanActCols <- gsub("Acc", "Accelerometer", humanActCols)
 humanActCols <- gsub("Gyro", "Gyroscope", humanActCols)
 humanActCols <- gsub("Mag", "Magnitude", humanActCols)
 humanActCols <- gsub("Freq", "Frequency", humanActCols)
-humanActCols <- gsub("mean", "Mean", humanActCols)
-humanActCols <- gsub("std", "StandardDeviation", humanActCols)
-
+humanActCols <- gsub("^f", "frequencyDomain", humanActCols)
+humanActCols <- gsub("^t", "timeDomain", humanActCols)
 # correct typo
 humanActCols <- gsub("BodyBody", "Body", humanActCols)
-
 # use new labels as column names
 colnames(humanAct) <- humanActCols
 
 #----------------------------------------------------------------------------#
-# Step 5 - Create a second, independent tidy set with the average of each
-#          variable for each activity and each subject
+# Step 5 - Create a  tidy set with the average of each variable for each 
+#          activity and each subject
 #----------------------------------------------------------------------------#
 
 # group by subject and activity and summarise using mean
